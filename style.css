@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
+
+* {
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body {
+	background: black;
+}
+/*view port height, and this (vh) will give the every div 1/3 of the entire height*/
+div { height: 33.333333333333333333333333vh;}
+
+#fahr {border-top:2px solid red;border-bottom:2px solid red;}
+input[type=number]{
+	width:100%; /*of the div*/
+	height:100%; /*of the div*/
+	background: black;
+	color:white;
+	font-size: 2em;
+	font-family:Bree Serif, sans-serif; /*just for backup*/
+	text-align: center;
+	border:0;
+}
+
+::placeholder { /* for chrome and firfox i guess..*/
+	color: #333;
+}
+
+/*
+pseudo-element is a keyword added to a selector 
+that lets you style a specific part of the selected element
+and there are a prefix shit for other browsers i guess
+
+::-webkit-input-placeholder { /* just for chrome,opera,safari
+	color: #333;
+}
+::-ms-input-placeholder { /* just for ms edge 
+	color: #333;
+}
+::-moz-input-placeholder { /* just for firfox
+	color: #333;
+}
+*/
