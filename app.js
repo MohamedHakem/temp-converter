@@ -7,7 +7,8 @@ var kelvInput = document.querySelector('#kelv > input');
 					var kelvTemp = (celsTemp + 273.15);
 					fahrInput.value = fahrTemp;
 					kelvInput.value = kelvTemp;
-			searchcity(celstemp);
+			//searchcity(celstemp);
+			searchcity(celsTemp);
 		};
 
 		function f2ck() {	var fahrTemp = parseFloat(fahrInput.value);
