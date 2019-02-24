@@ -7,31 +7,24 @@ var kelvInput = document.querySelector('#kelv > input');
 					var kelvTemp = (celsTemp + 273.15);
 					fahrInput.value = fahrTemp;
 					kelvInput.value = kelvTemp;
-			//searchcity(celstemp);
-			searchcity(celsTemp);
+					//searchcity(celsTemp);
 		};
-
 		function f2ck() {	var fahrTemp = parseFloat(fahrInput.value);
 					var celsTemp = ( (fahrTemp - 32 ) * (5/9) ); 
 					var kelvTemp = (celsTemp + 273.15);
 					celsInput.value = celsTemp;
 					kelvInput.value = kelvTemp;
-				 			searchcity(fahrTemp);
-
+				 	//searchcity(fahrTemp);
 			};
-
 		function k2cf() {	var kelvTemp = parseFloat(kelvInput.value);
 					var celsTemp = ( kelvTemp - 273.15 ); 
 					var fahrTemp = ( (celsTemp * (9/5)) + 32 ); 
 					celsInput.value = celsTemp;
 					fahrInput.value = fahrTemp;
-				 searchcity(kelvTemp);
-				 
+					//searchcity(kelvTemp); 
 		};
 function round2d(n) { return Math.round(n * 100)/100; };     //incase i need it but i won't bcoz am a mathy kid :P
-function searchcity(temp){
-	alert("temp is "+ temp);
-}
+//function searchcity(temp){ alert("temp is "+ temp); }
 function main() {	celsInput.addEventListener('input', c2fk);
 			fahrInput.addEventListener('input', f2ck);
 			kelvInput.addEventListener('input', k2cf);		};
