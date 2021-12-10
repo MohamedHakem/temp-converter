@@ -1,5 +1,3 @@
-# tempConverter
-
-This is link to the app:
-mohamedhakem.github.io/tempConverter
-this app is tempreture converter ... converts Celsius, Fahrenheit and Kelvin from any to all 
+# TempConverter
+This is a simple but handy app if you need to convert tempreture degree between Celsius, Fahrenheit and Kelvin.
+Try it! https://MohamedHakem.github.io/tempConverter
